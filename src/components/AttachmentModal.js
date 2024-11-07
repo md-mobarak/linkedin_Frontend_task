@@ -105,7 +105,7 @@ const AttachmentModal = ({ onClose }) => {
     count: 9
   });
 
-  // Handle form field changes (like category)
+  // Handle form field changes (like category
   const handleChange = (e) => {
     const { name, value } = e.target;
     setTask((prevState) => ({
