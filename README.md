@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Task Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Task Management Application**, a straightforward and interactive project that allows you to add, categorize, and manage tasks in an organized way. This application includes a feature-rich **React.js** frontend paired with a **Node.js/Express** backend.
 
-## Available Scripts
+## Live Demo Links
 
-In the project directory, you can run:
+- **Frontend**: [https://frontend-task-from-linkedin.vercel.app/](https://frontend-task-from-linkedin.vercel.app/)
+- **Backend API**: [https://backend-task-from-linkedin.vercel.app/](https://backend-task-from-linkedin.vercel.app/)
 
-### `npm start`
+## Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Add and Categorize Tasks
+   - **Quick Task Addition**: Click the "Add Task" button to open a modal where you can fill in the task details. 
+   - **Automatic Categorization**: Once you submit, the task will appear under the correct category based on your choice.
+   - **Real-Time Task Count**: Each category card displays the total number of tasks on its header, helping you keep track effortlessly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Manage Attachment Count
+   - **Easy Attachment Tracking**: Click on the "Attachment" icon to open a modal where you can add additional attachments to any task.
+   - **Instant Count Update**: The application calculates and updates the total attachment count instantly after you submit, so your data stays accurate.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React.js**: For building a dynamic and user-friendly interface.
+- **Vanilla CSS**: Custom styling to maintain a clean and minimalist design.
 
-### `npm run build`
+### Backend
+- **Node.js** and **Express.js**: For handling API requests and data management.
+- **Mongoose**: To define schema and interact with MongoDB for seamless database management.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How It Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Task Addition**: Go to the frontend and click **Add Task**. A modal will open, letting you fill in task details. Submit to save or close to exit.
+2. **Task Attachment Management**: Click on the **Attachment** icon in any task card. A modal will appear, allowing you to enter an additional count. Once confirmed, the sum of previous and new attachments displays immediately.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+This Task Management Application provides a clean and efficient way to organize tasks with ease. With real-time updates and an intuitive interface, managing tasks and attachments has never been simpler. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give it a try and experience enhanced productivity!
