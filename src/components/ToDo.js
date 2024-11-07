@@ -2,16 +2,18 @@ import React from 'react'
 import './InComplete.css'
 import CardList from './CardList'
 
-function ToDo() {
+function ToDo({tasks}) {
   return (
     <div className='container'>
     <div className='incomplete-child'>
     <p className='capsule-ToDo'>  <span className='capsule-text'>To Do</span></p>
-    <div className='zero-div'><p >0</p></div>
+    <div className='zero-div'><p >{tasks?.length}</p></div>
     </div>
     <div className='capsule-container'>
-        <CardList></CardList>
-    </div>
+          {
+            tasks.map((card)=> <CardList card={card}></CardList>)
+          } 
+        </div>
 </div>
   )
 }

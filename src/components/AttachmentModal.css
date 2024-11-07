@@ -1,39 +1,136 @@
-/* src/components/AttachmentModal.css */
-
+/* Modal Overlay (Background) */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative; /* Ensure the close button is relative to the modal */
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Close Button - Position inside the modal */
+.close-btn {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute; /* Position relative to .modal-content */
+  top: 15px; /* Distance from the top of the modal */
+  right: 15px; /* Distance from the right of the modal */
+  z-index: 999; /* Ensure it's above other modal content */
+}
+
+.close-btn:hover {
+  background-color: #ff1e1e;
+}
+
+/* Title Styling */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  margin-bottom: 15px;
+}
+
+/* Label Styling */
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border: 2px solid #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  align-self: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Category Dropdown */
+select {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Animation for Modal Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .modal-content {
-    background: white;
-    padding: 20px;
-    width: 300px;
-    max-width: 90%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .close-btn {
-    background: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin: 5px 0;
-  }
-  
+}

@@ -36,6 +36,20 @@
     background-color: #24B5FF;
     border-radius: 20px 0px 0px 20px;
 }
+.capsule-overView{
+ 
+    width: 25px;
+    height: 20px;
+    background-color: #ad07df;
+    border-radius: 20px 0px 0px 20px;
+}
+.capsule-completed{
+ 
+    width: 25px;
+    height: 20px;
+    background-color: #05eb68;
+    border-radius: 20px 0px 0px 20px;
+}
 .capsule-ToDo{
  
     width: 25px;
