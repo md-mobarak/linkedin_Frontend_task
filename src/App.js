@@ -1,45 +1,4 @@
 
-// import React, { useState } from 'react';
-// import './App.css';
-// import InComplete from './components/InComplete';
-// import ToDo from './components/ToDo';
-// import Doing from './components/Doing';
-// import UnderReview from './components/UnderReview';
-// import Completed from './components/Completed';
-// import OverView from './components/OverView';
-// import AttachmentModal from './components/AttachmentModal';
-// import { ToastContainer } from 'react-toastify'; // Import ToastContainer
-
-// function App() {
-//   const [isModalOpen, setIsModalOpen] = useState(false);
-
-//   const openModal = () => setIsModalOpen(true);
-//   const closeModal = () => setIsModalOpen(false);
-
-//   return (
-//     <div className="app">
-//       <h1>Frontend Task</h1>
-//       <button onClick={openModal}>Add Task</button>
-
-//       <div className="card-container">
-//         <InComplete />
-//         <ToDo />
-//         <Doing />
-//         <UnderReview />
-//         <Completed />
-//         <OverView />
-//       </div>
-
-//       {/* Modal Component */}
-//       {isModalOpen && <AttachmentModal onClose={closeModal} />}
-
-//       {/* ToastContainer for notifications */}
-//       <ToastContainer position="top-right" autoClose={5000} hideProgressBar newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
-//     </div>
-//   );
-// }
-
-// export default App;
 
 
 
@@ -67,7 +26,7 @@ function App() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:5000/api/v1/card');
+        const response = await axios.get('https://backend-task-from-linkedin.vercel.app/api/v1/card');
         setTasks(response.data); // Store data in state
       } catch (err) {
         setError('Failed to fetch tasks');

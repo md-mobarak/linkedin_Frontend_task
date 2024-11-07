@@ -28,7 +28,7 @@ const description =' While Font Awesome doesn’t have a specific icon for a bac
   const handleAttachmentUpdate = async () => {
     const updatedAttachments = attachments + newAttachmentCount;
     try {
-      await axios.put(`http://localhost:5000/api/v1/card/${cardId}`, {
+      await axios.put(`https://backend-task-from-linkedin.vercel.app/api/v1/card/${cardId}`, {
         count: updatedAttachments,
       });
       setAttachments(updatedAttachments);
